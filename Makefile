@@ -10,5 +10,13 @@ ex18:ex18.c
 	gcc ex18.c -o ex18
 ex18_q2:ex18_q2.c
 	gcc ex18_q2.c -o ex18_q2
+game:object.c ex19.c
+	gcc -c object.c -o object.o
+	gcc -c ex19.c -o ex19.o
+	gcc object.o ex19.o -o game
+game2:object.c ex19_q.c
+	gcc -c object.c -o object.o
+	gcc -c ex19_q.c -o ex19_q.o
+	gcc object.o ex19_q.o -o game2
 clean:
-	rm semu ex16 ex17 ex18 ex18_q2
+	rm -f semu ex16 ex17 ex18 ex18_q2 object.o ex19.o game game2 ex19_q.o
