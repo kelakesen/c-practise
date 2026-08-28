@@ -1,0 +1,10 @@
+# 忽略全部
+*
+# 允许进入所有子目录
+!*/
+# 不忽略所有.c文件
+!*.c
+# 保留.gitignore
+!.gitignore
+am-kernels/
+fceux-am/
