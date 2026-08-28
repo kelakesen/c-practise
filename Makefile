@@ -1,3 +1,7 @@
+CFLAGES := -Wall -g -00
+
+
+
 semu:sEMU2.c
 	gcc sEMU2.c -o semu
 file_wr:filewr.c
@@ -18,5 +22,7 @@ game2:object.c ex19_q.c
 	gcc -c object.c -o object.o
 	gcc -c ex19_q.c -o ex19_q.o
 	gcc object.o ex19_q.o -o game2
+mini:minirvEMU.c
+	gcc minirvEMU.c -o mini
 clean:
-	rm -f semu ex16 ex17 ex18 ex18_q2 object.o ex19.o game game2 ex19_q.o
+	rm -f semu ex16 ex17 ex18 ex18_q2 object.o ex19.o game game2 ex19_q.o mini
