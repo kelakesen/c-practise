@@ -14,8 +14,10 @@
 
 最常见用法：包装管道、socket 等系统调用返回的 fd
 
-``` int pipefd[2];
-``` pipe(pipefd);
-``` FILE *out = fdopen(pipefd[1], "w");
-``` fprintf(out, "Hello via pipe\n");
-``` fclose(out);  // 同时关闭 pipefd[1]
+```c
+
+int pipefd[2];
+pipe(pipefd);
+FILE *out = fdopen(pipefd[1], "w");
+fprintf(out, "Hello via pipe\n");
+fclose(out);  // 同时关闭 pipefd[1]

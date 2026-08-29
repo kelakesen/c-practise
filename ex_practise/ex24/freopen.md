@@ -16,5 +16,7 @@
 
 **常见用法：重定向标准流**
 
-> ```freopen("out.txt", "w", stdout); // printf 全部写入文件  
-> ```freopen("in.txt", "r", stdin);   // scanf 从文件读取
+```c
+
+> freopen("out.txt", "w", stdout); // printf 全部写入文件  
+> freopen("in.txt", "r", stdin);   // scanf 从文件读取
