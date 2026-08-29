@@ -18,5 +18,5 @@
 
 ```c
 
-> freopen("out.txt", "w", stdout); // printf 全部写入文件  
-> freopen("in.txt", "r", stdin);   // scanf 从文件读取
+freopen("out.txt", "w", stdout); // printf 全部写入文件    
+freopen("in.txt", "r", stdin);   // scanf 从文件读取
