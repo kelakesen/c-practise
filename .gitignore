@@ -6,5 +6,8 @@
 !*.c
 # 保留.gitignore
 !.gitignore
+#保留所有 `.md` 文件
+!*.md
+#忽略这两个文件夹
 am-kernels/
 fceux-am/
